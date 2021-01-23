@@ -111,7 +111,7 @@ public class RegistracijasLogs {
                     try {
                         Class.forName("com.mysql.cj.jdbc.Driver");
                         Connection conn = DriverManager.getConnection(
-                                "jdbc:mysql://localhost:3306/pieteikumi_kursiem?serverTimezone=UTC", "root", "Darynda123");
+                                "jdbc:mysql://localhost:3306/pieteikumi_kursiem?serverTimezone=UTC", "root", "password");
                         System.out.println("Connection is made!");
                         String strInsert = "insert into pieteikumi (vards, talrunis, epasts, programma) values (?, ?,?, ?)";
                         PreparedStatement stmt = conn.prepareStatement(strInsert);
